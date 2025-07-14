@@ -1,0 +1,229 @@
+[
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "The parabola y = x^2 - 4x + 3 has a vertex at which point?",
+    "option_a": "(2, -1)",
+    "option_b": "(1, 3)",
+    "option_c": "(2, 3)",
+    "option_d": "(3, 0)",
+    "answer": "(2, -1)",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "The vertex form of a quadratic function is given by completing the square. For y = x^2 - 4x + 3, the vertex is at (2, -1).",
+    "parabola_type": "Standard",
+    "equation": "y = x^2 - 4x + 3",
+    "key_features": {
+      "vertex": "(2, -1)",
+      "axis_of_symmetry": "x = 2",
+      "x_intercepts": [
+        "1",
+        "3"
+      ],
+      "y_intercept": "3"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Which of the following parabolas has its vertex at the origin?",
+    "option_a": "y = x^2 - 1",
+    "option_b": "y = (x - 1)^2 + 1",
+    "option_c": "y = x^2",
+    "option_d": "y = (x + 1)^2 - 1",
+    "answer": "y = x^2",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "The vertex of y = x^2 is at (0, 0), the origin. For other equations, the vertex shifts from the origin.",
+    "parabola_type": "Standard",
+    "equation": "y = x^2",
+    "key_features": {
+      "vertex": "(0, 0)",
+      "axis_of_symmetry": "x = 0",
+      "x_intercepts": [
+        "0"
+      ],
+      "y_intercept": "0"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "For the parabola y = -2(x - 3)^2 + 4, what is its maximum value?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "5",
+    "answer": "4",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The maximum value of a parabola in vertex form y = a(x - h)^2 + k occurs at k if a is negative. Here, the maximum value is 4.",
+    "parabola_type": "Vertex",
+    "equation": "y = -2(x - 3)^2 + 4",
+    "key_features": {
+      "vertex": "(3, 4)",
+      "axis_of_symmetry": "x = 3",
+      "x_intercepts": [],
+      "y_intercept": "-14"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "What is the axis of symmetry for the parabola y = 3(x + 1)^2 - 5?",
+    "option_a": "x = -1",
+    "option_b": "x = 0",
+    "option_c": "x = 1",
+    "option_d": "x = -5",
+    "answer": "x = -1",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "In the vertex form y = a(x - h)^2 + k, the axis of symmetry is x = h. For y = 3(x + 1)^2 - 5, it is x = -1.",
+    "parabola_type": "Vertex",
+    "equation": "y = 3(x + 1)^2 - 5",
+    "key_features": {
+      "vertex": "(-1, -5)",
+      "axis_of_symmetry": "x = -1",
+      "x_intercepts": [],
+      "y_intercept": "-2"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Which of the following is a factor of the quadratic equation y = x^2 + 5x + 6?",
+    "option_a": "(x + 1)",
+    "option_b": "(x + 2)",
+    "option_c": "(x + 3)",
+    "option_d": "(x + 4)",
+    "answer": "(x + 2)",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The factors of x^2 + 5x + 6 are (x + 2)(x + 3). Both (x + 2) and (x + 3) are factors.",
+    "parabola_type": "Factored",
+    "equation": "y = x^2 + 5x + 6",
+    "key_features": {
+      "vertex": "(-2.5, -0.25)",
+      "axis_of_symmetry": "x = -2.5",
+      "x_intercepts": [
+        "-2",
+        "-3"
+      ],
+      "y_intercept": "6"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "The parabola y = -x^2 + 4x + 5 opens in which direction?",
+    "option_a": "Upward",
+    "option_b": "Downward",
+    "option_c": "To the right",
+    "option_d": "To the left",
+    "answer": "Downward",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The parabola y = -x^2 + 4x + 5 opens downward because the coefficient of x^2 is negative.",
+    "parabola_type": "Standard",
+    "equation": "y = -x^2 + 4x + 5",
+    "key_features": {
+      "vertex": "(2, 9)",
+      "axis_of_symmetry": "x = 2",
+      "x_intercepts": [
+        "1",
+        "5"
+      ],
+      "y_intercept": "5"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "What are the x-intercepts of the parabola y = (x - 1)(x - 4)?",
+    "option_a": "1 and 4",
+    "option_b": "-1 and -4",
+    "option_c": "1 and -4",
+    "option_d": "-1 and 4",
+    "answer": "1 and 4",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The x-intercepts of y = (x - 1)(x - 4) are the roots of the equation, which are x = 1 and x = 4.",
+    "parabola_type": "Factored",
+    "equation": "y = (x - 1)(x - 4)",
+    "key_features": {
+      "vertex": "(2.5, -2.25)",
+      "axis_of_symmetry": "x = 2.5",
+      "x_intercepts": [
+        "1",
+        "4"
+      ],
+      "y_intercept": "-4"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "For the function y = 2x^2 - 8x + 6, what is the minimum value?",
+    "option_a": "0",
+    "option_b": "2",
+    "option_c": "-1",
+    "option_d": "4",
+    "answer": "2",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "The vertex of the parabola y = 2x^2 - 8x + 6 can be found using the vertex formula. The minimum value is the y-coordinate of the vertex, which is 2.",
+    "parabola_type": "Standard",
+    "equation": "y = 2x^2 - 8x + 6",
+    "key_features": {
+      "vertex": "(2, 2)",
+      "axis_of_symmetry": "x = 2",
+      "x_intercepts": [
+        "1",
+        "3"
+      ],
+      "y_intercept": "6"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Which of the following quadratics has no real x-intercepts?",
+    "option_a": "y = x^2 - 2x + 2",
+    "option_b": "y = x^2 - 4x + 4",
+    "option_c": "y = x^2 - 5x + 6",
+    "option_d": "y = x^2 + x + 1",
+    "answer": "y = x^2 + x + 1",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "The discriminant of y = x^2 + x + 1 is negative, which means it has no real x-intercepts.",
+    "parabola_type": "Standard",
+    "equation": "y = x^2 + x + 1",
+    "key_features": {
+      "vertex": "(-0.5, 0.75)",
+      "axis_of_symmetry": "x = -0.5",
+      "x_intercepts": [],
+      "y_intercept": "1"
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Which quadratic function has its vertex below the x-axis?",
+    "option_a": "y = x^2 + 3x + 2",
+    "option_b": "y = x^2 - 4x + 5",
+    "option_c": "y = (x - 4)^2 + 2",
+    "option_d": "y = 2x^2 - 8x + 6",
+    "answer": "y = x^2 - 4x + 5",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "The vertex of y = x^2 - 4x + 5 is at (2, 1), which is below the x-axis, making it a suitable option.",
+    "parabola_type": "Standard",
+    "equation": "y = x^2 - 4x + 5",
+    "key_features": {
+      "vertex": "(2, 1)",
+      "axis_of_symmetry": "x = 2",
+      "x_intercepts": [],
+      "y_intercept": "5"
+    }
+  }
+]

@@ -22,7 +22,6 @@ def extract_text_from_pdf(pdf_path):
         page_texts.append({"page_number": i+1, "text": text})
     return page_texts
 
-
 def build_system_prompt():
     return (
         "You are a SAT Math Question Extractor.\n"
@@ -31,17 +30,20 @@ def build_system_prompt():
         "1. Extract each complete question related to Quadratic Equations.\n"
         "2. If answer options are present, group them under an 'options' list.\n"
         "3. If no options are present, just include the question text.\n"
-        "4. Ignore any questions that are not related to Quadratic Equations.\n\n"
+        "4. Ignore any questions that are not related to Quadratic Equations.\n"
+        "5. For each question, classify its difficulty level as one of: easy, medium, or hard. Use your best judgment based on complexity, required steps, and tricks.\n\n"
         "Return the result as a JSON array of objects like this:\n"
         "[\n"
         "  {\n"
         '    "question_number": 1,\n'
         '    "question_text": "What is the value of x in the equation x^2 - 5x + 6 = 0?",\n'
-        '    "options": ["A) 2 and 3", "B) -2 and -3", "C) 1 and 6", "D) No solution"]\n'
+        '    "options": ["A) 2 and 3", "B) -2 and -3", "C) 1 and 6", "D) No solution"],\n'
+        '    "difficulty": "easy"\n'
         "  },\n"
         "  {\n"
         '    "question_number": 2,\n'
-        '    "question_text": "Solve for x: x^2 = 49"\n'
+        '    "question_text": "Solve for x: x^2 = 49",\n'
+        '    "difficulty": "easy"\n'
         "  }\n"
         "]"
     )
