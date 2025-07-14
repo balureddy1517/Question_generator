@@ -2,6 +2,8 @@ import fitz  # PyMuPDF
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+import re
+import json
 
 
 load_dotenv()
@@ -75,21 +77,67 @@ def process_pdf(pdf_path,doc_name):
     pages = extract_text_from_pdf(pdf_path)
     system_prompt = build_system_prompt()
     client=initializing_llm()
-    i=0
+    
 
     for page in pages:
         user_prompt = build_user_prompt(page["text"])
         llm_output = call_llm(system_prompt, user_prompt,client)
         print(llm_output)
         save_page_output(page["page_number"], doc_name,llm_output)
-        if(i==5):
-            break
-        i+=1
+        
 
 
-input_docs_path='/Users/balakrishnareddyragannagari/Desktop/Sat_questions/Question_generator/docs'
-docs=os.listdir(input_docs_path)
+def extract_json_blocks_from_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        text = f.read()
 
-for doc in docs:
-    doc_path=os.path.join(input_docs_path,doc)
-    process_pdf(doc_path,doc)
+    
+    raw_blocks = re.findall(r'\{.*?\}', text, re.DOTALL)
+    
+    
+    extracted_questions = []
+    for block in raw_blocks:
+        try:
+            json_block = json.loads(block)
+            extracted_questions.append(json_block)
+        except json.JSONDecodeError as e:
+            print(f"Skipping invalid block in {file_path}: {e}")
+    
+    return extracted_questions
+
+
+
+
+def process_all_files(folder_path="output_text", output_json="combined_questions.json"):
+    all_questions = []
+
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".txt"):
+            
+            file_path = os.path.join(folder_path, filename)
+            questions = extract_json_blocks_from_file(file_path)
+            all_questions.extend(questions)
+
+   
+    with open(output_json, "w", encoding="utf-8") as out_file:
+        json.dump(all_questions, out_file, indent=2, ensure_ascii=False)
+    
+    print(f"Saved {len(all_questions)} questions to {output_json}")
+    return all_questions
+
+
+
+
+if __name__=="__main__":
+    input_docs_path=os.getenv("INPUT_FOLDER")
+    docs=os.listdir(input_docs_path)
+
+    for doc in docs:
+        doc_name=doc.split('.pdf')[0]
+        doc_path=os.path.join(input_docs_path,doc)
+        process_pdf(doc_path,doc_name)
+
+
+    folder_path = os.getenv("TEXT_FILES_FOLDER")
+    # print(os.listdir(folder_path))
+    process_all_files()
