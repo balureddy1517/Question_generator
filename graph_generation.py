@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import json
+import os
 
 def draw_graph(graph_data, index):
     fig, ax = plt.subplots()
@@ -83,7 +84,12 @@ def draw_graph(graph_data, index):
 
     ax.set_title(f"Graph {index+1}: {gtype}")
     plt.grid(True)
-    plt.show()
+    # plt.show()
+    cir_graph_dir="circle_graphs"
+    os.makedirs(cir_graph_dir,exist_ok=True)
+    path = os.path.join(cir_graph_dir, f'graph-{index + 1}.png')
+    plt.savefig(path, bbox_inches='tight') 
+    plt.close() 
 
 
 with open('circle_questions.json', 'r') as file:
