@@ -1,0 +1,260 @@
+[
+  {
+    "question_text": "If the area of the triangle above is 6, what is its perimeter?",
+    "option_a": "11",
+    "option_b": "12",
+    "option_c": "15",
+    "option_d": "16",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          5,
+          4
+        ],
+        "angle_measures": [
+          90
+        ],
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Right triangle with legs 5 and 4"
+    }
+  },
+  {
+    "question_text": "If x = 3, what is the area of the triangle above?",
+    "option_a": "10",
+    "option_b": "21",
+    "option_c": "30",
+    "option_d": "45",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          "5x",
+          "2x"
+        ],
+        "angle_measures": [
+          90
+        ],
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Right triangle with legs 5x and 2x"
+    }
+  },
+  {
+    "question_text": "If equilateral triangle ABC is cut by three lines, as shown, to form four equilateral triangles of equal area, what is the length of a side of one of the smaller triangles?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          12
+        ],
+        "angle_measures": [
+          60,
+          60,
+          60
+        ],
+        "labels": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Equilateral triangle with side 12"
+    }
+  },
+  {
+    "question_text": "What is the value of p in the figure above?",
+    "option_a": "50",
+    "option_b": "55",
+    "option_c": "60",
+    "option_d": "70",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "angle_measures": [
+          "p°",
+          "24°",
+          "20°"
+        ],
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Triangle with angles p°, 24°, and 20°"
+    }
+  },
+  {
+    "question_text": "A movie theater is 3 blocks due north of a supermarket, and a beauty parlor is 4 blocks due east of the movie theater. How many blocks long is the street that runs directly from the supermarket to the beauty parlor?",
+    "option_a": "2.5",
+    "option_b": "3",
+    "option_c": "5",
+    "option_d": "7",
+    "graph_data": {
+      "type": "other",
+      "parameters": {
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Right triangle with legs 3 and 4"
+    }
+  },
+  {
+    "question_text": "What is the area of triangle WXZ in the figure above?",
+    "option_a": "6",
+    "option_b": "12",
+    "option_c": "18",
+    "option_d": "24",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          6,
+          2,
+          10
+        ],
+        "angle_measures": [
+          90
+        ],
+        "labels": [
+          "W",
+          "X",
+          "Y",
+          "Z"
+        ]
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Right triangle with legs 6 and 2"
+    }
+  },
+  {
+    "question_text": "Triangles STU and XYZ are shown above. Which of the following is equal to the ratio of ST/SU?",
+    "option_a": "YZ/XY",
+    "option_b": "YZ/XZ",
+    "option_c": "XZ/XY",
+    "option_d": "XZ/YZ",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "angle_measures": [
+          "28°",
+          "62°"
+        ],
+        "labels": [
+          "S",
+          "T",
+          "U",
+          "X",
+          "Y",
+          "Z"
+        ]
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Two triangles with shared angle"
+    }
+  },
+  {
+    "question_text": "In the figure above, what is the area of triangle YAZ?",
+    "option_a": "3x",
+    "option_b": "5x",
+    "option_c": "2x²",
+    "option_d": "4x²",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          "x",
+          "4x"
+        ],
+        "labels": [
+          "W",
+          "X",
+          "Y",
+          "Z",
+          "A"
+        ]
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Triangle within a rectangle"
+    }
+  },
+  {
+    "question_text": "A square is inscribed in a circle with area 9π. What is the area of the square?",
+    "option_a": "3√2",
+    "option_b": "9√2",
+    "option_c": "18",
+    "option_d": "36",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "radius": 3,
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Circle with area 9π"
+    }
+  },
+  {
+    "question_text": "In the figure above, if x = 7 and y = 11, what is the difference between the greatest and least possible integer values of z?",
+    "option_a": "11",
+    "option_b": "12",
+    "option_c": "13",
+    "option_d": "14",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          "x",
+          "y",
+          "z"
+        ],
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Triangle with sides x, y, z"
+    }
+  },
+  {
+    "question_text": "An equilateral triangle with a perimeter of 12 is inscribed in a circle. What is the area of the circle?",
+    "option_a": "16π/9",
+    "option_b": "4√3π/3",
+    "option_c": "3π",
+    "option_d": "16π/3",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "labels": []
+      },
+      "axis_labels": {},
+      "x_range": [],
+      "y_range": [],
+      "additional_info": "Circle with inscribed equilateral triangle"
+    }
+  }
+]
