@@ -1,0 +1,352 @@
+[
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In the circle above with center O, what is the length of the radius if the circle passes through point (5, 5) and O is at (0, 0)?",
+    "option_a": "5",
+    "option_b": "√50",
+    "option_c": "10",
+    "option_d": "√52",
+    "answer": "√50",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The radius of the circle can be found using the distance formula between the center O(0,0) and the point (5,5) on the circle. √((5-0)² + (5-0)²) = √50. The other options miscalculate the formula.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": "√50"
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "If the circle above has a diameter of 12 units, what is its circumference?",
+    "option_a": "12π",
+    "option_b": "6π",
+    "option_c": "24π",
+    "option_d": "36π",
+    "answer": "12π",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "The circumference of a circle is found by the formula π times the diameter. With a diameter of 12, the circumference is 12π. The other options are incorrect applications of the formula.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          5,
+          5
+        ],
+        "radius": 6
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        15
+      ],
+      "y_range": [
+        0,
+        15
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "What is the area of the circle above with center P(3, 3) and radius 4?",
+    "option_a": "12π",
+    "option_b": "16π",
+    "option_c": "64π",
+    "option_d": "24π",
+    "answer": "16π",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "The area of a circle is calculated as π times the radius squared. With a radius of 4, the area is π * 4² = 16π. The other options miscalculate the area formula.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          3,
+          3
+        ],
+        "radius": 4
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        10
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In the circle above with center M, if the radius is 7, what is the length of the minor arc between points A and B if ∠AMB = 90°?",
+    "option_a": "3.5π",
+    "option_b": "14π",
+    "option_c": "7π",
+    "option_d": "3.5",
+    "answer": "3.5π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The length of an arc is calculated as the fraction of the circle's circumference. For a 90° angle in a circle with radius 7, the arc length is (90/360) * 2π * 7 = 3.5π. The other options use incorrect fractions of the circumference.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 7
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "What is the center of the circle above if it has a radius of 5 and passes through the point (2, 2)?",
+    "option_a": "(0, 0)",
+    "option_b": "(3, 3)",
+    "option_c": "(5, 5)",
+    "option_d": "(10, 10)",
+    "answer": "(0, 0)",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "The center can be calculated by rearranging the circle equation to find (h, k) such that (x-h)² + (y-k)² = r² satisfies the given point. The correct center is (0, 0), as it completes the circle's equation with the given point.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 5
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "If a line tangent to the circle above at point T is perpendicular to radius OT, and OT = 5, what is the distance from the center O to the tangent line?",
+    "option_a": "5",
+    "option_b": "10",
+    "option_c": "0",
+    "option_d": "2.5",
+    "answer": "5",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The distance from the center of the circle to the tangent line is equal to the radius of the circle, which is 5. The other options misunderstand the tangent-radius relationship.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 5
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "What is the length of the chord AB in the circle above if the radius is 10 and ∠AOB is 60°?",
+    "option_a": "10",
+    "option_b": "5√3",
+    "option_c": "10√3",
+    "option_d": "10√2",
+    "answer": "10",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "The length of the chord can be computed using the formula 2 * r * sin(θ/2). For r = 10 and θ = 60°, the chord length is 2 * 10 * sin(30°) = 10. The other options result from incorrect application of trigonometric formulas.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 10
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -15,
+        15
+      ],
+      "y_range": [
+        -15,
+        15
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In the circle with center C at (2, 3), what is the perimeter of the triangle formed by points C, D(6, 3), and E(2, 0)?",
+    "option_a": "10",
+    "option_b": "12",
+    "option_c": "15",
+    "option_d": "18",
+    "answer": "12",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The perimeter is the sum of the distances between the points. CD is 4, CE is 3, and DE is 5, making the perimeter 4 + 3 + 5 = 12. The other options result from incorrect distance calculations.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          2,
+          3
+        ],
+        "radius": 5
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        10
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In the figure above, if sector AOB of the circle with center O has an area of 25π and the radius is 10, what is the measure of ∠AOB?",
+    "option_a": "90°",
+    "option_b": "45°",
+    "option_c": "60°",
+    "option_d": "30°",
+    "answer": "90°",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "The area of a sector is (θ/360) * π * r². Solving for θ when the area is 25π and r = 10, gives θ = 90°. The other options are incorrect because they miscalculate the sector area.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 10
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -15,
+        15
+      ],
+      "y_range": [
+        -15,
+        15
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "The circle above has a center at O and a radius of 8. If point P is on the circle and ∠AOP = 45°, what is the length of the arc AP?",
+    "option_a": "2π",
+    "option_b": "4π",
+    "option_c": "3π",
+    "option_d": "π",
+    "answer": "2π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The arc length is (θ/360) * 2πr. For θ = 45° and r = 8, the arc length is (45/360) * 2π * 8 = 2π. The other options do not correctly use the arc length formula.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 8
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    }
+  }
+]
