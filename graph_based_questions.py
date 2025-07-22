@@ -1,177 +1,147 @@
-import base64
-from openai import OpenAI
-import os
+import json
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain.schema import Document
+from langchain_community.chat_models import ChatOpenAI
+from langchain.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
+import os
+from langchain_community.document_loaders import JSONLoader
+from langchain.embeddings import HuggingFaceEmbeddings
+
+import json
+from pathlib import Path
+from pprint import pprint
+
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-def encode_image(image_path):
-    with open(image_path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode("utf-8")
-
-base64_image = encode_image("pdf_images/samplepdfimage-1.jpg")
-
-image_paths=[]
-
-dir='pdf_images'
-images=os.listdir(dir)
-for image in images:
-    path=os.path.join(dir,image)
-    print(path)
-    image_paths.append(path)
-
-print(image_paths)
-
-image_blocks = [
-    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{encode_image(path)}"}}
-    for path in image_paths
-]
-
-# general_math_image_prompt = '''
-# You are a SAT Math Question Generator.
-
-# Your job is to analyze **images of SAT math problems** that may contain **figures, graphs, diagrams, or mathematical content**, and generate a new multiple-choice question based on the information.
-
-# Instructions:
-# - Use the image to create a **new math multiple-choice question** similar to what might appear in the SAT exam.
-# - The question should be **figure-based**, meaning the visual content (graph, shape, diagram) is important to the question.
-# - The question must be answerable based on the **image content**, not from guesswork.
-# - Generate 4 answer choices: A, B, C, and D.
-# - Provide the **correct answer** explicitly.
-# - Provide **clear feedback/explanation** for the correct answer.
-# - Return the output as a JSON object in the exact format below.
-
-# Output format (strictly return JSON):
-# {
-#   "content_name": "Problem Solving and Data Analysis | Geometry | Algebra | etc.",
-#   "question_type": "Graph | Geometry | Word Problem | etc.",
-#   "question_choice": "Text of the question here...",
-#   "option_a": "Option A",
-#   "option_b": "Option B",
-#   "option_c": "Option C",
-#   "option_d": "Option D",
-#   "answer": "exact text of correct option",
-#   "difficulty_level": "Easy | Medium | Hard",
-#   "category_type": "Maths",
-#   "feedback": "Explanation of answer including reasoning",
-#   "figure_analysis": "Brief description of what’s in the image: graph, equation, labels, coordinates, etc."
-# }
-# '''
+embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 
-# general_math_user_prompt = '''
-# You will receive an image from an SAT math worksheet or book.
+def metadata_func(record: dict, metadata: dict) -> dict:
 
-# Use the image to generate a **10 new questions** that:
-# - Is inspired by the content shown in the image (e.g., graph, diagram, shapes, equations)
-# - Tests understanding of the concepts present in the image
-# - Is of SAT-level quality and difficulty
-# - Is clear and answerable based only on the image
+    metadata["graph_type"] = record.get("graph_data")['type']
+    return metadata
 
-# Return your result as a single **JSON object**, with no explanation outside of the JSON.
-
-# Begin analyzing the image now.
-# '''
-
-
-# response = client.chat.completions.create(
-#     model="gpt-4o",
-#     messages=[
-#         {
-#             "role": "user",
-#             "content": [
-#                 {
-#                     "type": "text",
-#                     "text": "Generate a few SAT-style questions based on this image."
-#                 },
-#                 {
-#                     "type": "image_url",
-#                     "image_url": {
-#                         "url": f"data:image/jpeg;base64,{base64_image}"
-#                     }
-#                 }
-#             ]
-#         }
-#     ],
+# loader = JSONLoader(
+#     file_path='extracted_questions.json',
+#     jq_schema='.[]',
+#     content_key="question_text",
+#     metadata_func=metadata_func
 # )
-system_prompt = ('''
-   
-You are a SAT math question generator expert.
 
-You will receive one or more images containing SAT graph-based math questions related to **geometry** (e.g., circles, quadrilaterals, and volume figures).
+# data = loader.load()
 
-Your task is to generate **10 brand new, original multiple-choice questions** inspired by those images.
+# # print(data)
 
-- Each question must be **answerable only by looking at the graph or figure**.
-- Do NOT reuse or copy the original questions or answers.
-- Questions must involve **geometry-based visual reasoning** such as interpreting circle properties, angles in quadrilaterals, or 3D volume dimensions.
-- Each question must include the **full data needed to reconstruct the figure or graph exactly** (e.g., radius, center, side lengths, volume parameters, axis labels, angle measures).
-- Questions must refer explicitly to the figure and require interpreting it.
-- Provide four answer choices (A–D), the exact correct answer text, detailed feedback, difficulty level, and category.
-- Return all 10 questions as a JSON array without any extra text or explanation.
 
-Use this exact JSON format for each question:
+
+# vectorstore = FAISS.from_documents(data, embedding_model)
+
+# vectorstore.save_local("faiss_sat_questions_db")
+
+# print("stored in vector db")
+
+
+vectorstore = FAISS.load_local("faiss_sat_questions_db", embedding_model,allow_dangerous_deserialization=True)
+
+def search_by_graph_type(vectorstore, query, graph_type, k=10):
+    results = vectorstore.similarity_search(query, k=k)
+    return [doc for doc in results if doc.metadata.get("graph_type", "").lower() == graph_type.lower()]
+
+
+results = search_by_graph_type(vectorstore, "circle", "circle")
+
+examples=[]
+for doc in results:
+    temp={}
+    temp['question']=doc.page_content
+    temp['graph type']=doc.metadata.get("graph_type")
+    examples.append(temp)
+
+
+print(examples)
+
+questions="circle"
+
+system_prompt = (
+    '''
+You are an expert SAT math question generator focused on graph-based visual reasoning.
+
+You will be provided with a question (text only) and a graph type. Your task is to transform this into a **fully structured SAT-style multiple-choice question JSON** as follows:
+
+- Use the provided question and graph type to generate a valid SAT-style visual math question.
+- DO NOT reuse existing real SAT questions.
+- Ensure the question is **answerable only by looking at the graph** and includes **all data required to reconstruct the graph** in code.
+- Provide 4 options (A-D), the exact correct answer text, and detailed feedback explaining the correct answer and why the others are wrong.
+- Include `graph_data`: shape type, parameters (like radius, side lengths, center, angle measures), axis labels, and the x/y range of the figure.
+
+You MUST return a list of exactly 10 JSON objects like the format below, without any extra text or markdown:
 
 {
   "content_name": "Problem Solving and Data Analysis",
   "question_type": "Graph",
-  "question_choice": "Question text referring to the figure or diagram",
-  "option_a": "Option A",
-  "option_b": "Option B",
-  "option_c": "Option C",
-  "option_d": "Option D",
-  "answer": "Exact correct answer option text",
-  "difficulty_level": "Easy | Medium | Hard",
+  "question_choice": "What is the measure of angle ABC in the figure below?",
+  "option_a": "30°",
+  "option_b": "45°",
+  "option_c": "60°",
+  "option_d": "90°",
+  "answer": "60°",
+  "difficulty_level": "Medium",
   "category_type": "Maths",
-  "feedback": "Detailed explanation about why the correct answer is right and why others are wrong",
+  "feedback": "The figure shows triangle ABC with an equilateral shape. All angles in an equilateral triangle are 60°. The other options reflect common misconceptions about triangle angles.",
   "graph_data": {
-    "type": "circle | rectangle | square | prism | cylinder | cone",
+    "type": "triangle",
     "parameters": {
-      "radius": 5,
-      "center": [0, 0],
-      "side_lengths": [4, 6],
-      "height": 10,
-      "angle_measures": [90, 45, 45]
+      "side_lengths": [6, 6, 6],
+      "angle_measures": [60, 60, 60],
+      "vertices": [[0,0], [3,5.2], [6,0]]
     },
     "axis_labels": {"x": "Units", "y": "Units"},
-    "x_range": [min_x, max_x],
-    "y_range": [min_y, max_y]
+    "x_range": [0, 10],
+    "y_range": [0, 10]
   }
 }
-
-
-                 '''
-
+'''
 )
 
-# User prompt
+
 user_prompt = (
-   """
-You are given one or more images containing SAT math questions involving graphs.
+    f"""
+You are given sample SAT-style questions and their respective graph types.
 
-Based on these images, generate 10 **new** SAT math questions as per the system prompt above.
+Generate 10  new questions in the **exact same style** based on {questions}. Each question must rely on analyzing the graph/figure to be solved.
 
-Questions must require analyzing the graph to answer, and must provide full data to redraw the graph programmatically.
+Include 4 choices (A-D), the correct answer, feedback, and full graph data (`type`, `parameters`, `axis_labels`, `x/y ranges`) needed to draw the figure.
 
-Return the output as a JSON array.
+Return a JSON array with 10 objects. Follow the JSON format strictly. Do not include any extra explanation or markdown.
+
+
+Here are the examples:
+{examples}
+
+
 
 
 """
 )
 
 
-response = client.chat.completions.create(
+
+generator = ChatOpenAI(
+    openai_api_key=os.getenv("API_KEY"),
     model="gpt-4o",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": [
-            {"type": "text", "text": user_prompt},
-            *image_blocks  # Unpack all image blocks here
-        ]}
-    ],
     temperature=0.8
 )
 
-print(response.choices[0].message.content)
+messages = [
+    {"role": "system", "content": system_prompt},
+    {"role": "user", "content": user_prompt}
+]
+
+
+response = generator.invoke(messages)
+llm_response=response.content
+
+print(llm_response)
