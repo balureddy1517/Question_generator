@@ -2,6 +2,7 @@ import base64
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
@@ -113,3 +114,13 @@ response = client.chat.completions.create(
     temperature=0
 )
 print(response.choices[0].message.content)
+
+llm_response=response.choices[0].message.content
+cleaned_json = llm_response.strip().removeprefix("```json").removesuffix("```").strip()
+
+parsed_data = json.loads(cleaned_json)
+
+with open("extracted_questions.json", "w", encoding="utf-8") as out_file:
+        json.dump(parsed_data, out_file, indent=2, ensure_ascii=False)
+
+
