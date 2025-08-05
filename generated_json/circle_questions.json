@@ -1,0 +1,367 @@
+[
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In the figure above, the circle has center O and a radius of 5. What is the length of the arc ABC if the measure of angle AOC is 72°?",
+    "option_a": "2π",
+    "option_b": "3π",
+    "option_c": "π",
+    "option_d": "π/2",
+    "answer": "2π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The arc length of a circle can be calculated with the formula (θ/360) * 2πr, where θ is the angle in degrees. Here, (72/360) * 2π * 5 = 2π. The other options are incorrect due to miscalculations with the angle or radius.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 5,
+        "angle_measures": [
+          72
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -6,
+        6
+      ],
+      "y_range": [
+        -6,
+        6
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "If the radius of the circle centered at P is 8, and the sector formed by angle APB is 90°, what is the area of the sector?",
+    "option_a": "16π",
+    "option_b": "32π",
+    "option_c": "8π",
+    "option_d": "64π",
+    "answer": "16π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The area of a sector is given by (θ/360) * πr². With a 90° angle and radius 8, the area is (90/360) * π * 8² = 16π. Other options result from incorrect angle or radius calculations.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 8,
+        "angle_measures": [
+          90
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Circle Q has a radius of 10 and a central angle XOY of 180°. What is the perimeter of the semicircle?",
+    "option_a": "20 + 5π",
+    "option_b": "20 + 10π",
+    "option_c": "10 + 10π",
+    "option_d": "10 + 5π",
+    "answer": "20 + 10π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The perimeter of a semicircle includes the diameter and half the circumference: diameter + (πr). Here, it is 20 (diameter) + 10π (half the circumference). Other options are incorrect due to miscalculating the diameter or circumference.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 10,
+        "angle_measures": [
+          180
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -11,
+        11
+      ],
+      "y_range": [
+        -11,
+        11
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In the figure above, circle R has a diameter of 12. What is the circumference of the circle?",
+    "option_a": "6π",
+    "option_b": "12π",
+    "option_c": "18π",
+    "option_d": "24π",
+    "answer": "12π",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "The circumference of a circle is calculated as π times the diameter. Here, π * 12 = 12π. Other values represent errors in using the formula or incorrect diameter values.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 6
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -7,
+        7
+      ],
+      "y_range": [
+        -7,
+        7
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Circle S with center (1,2) has a radius of 7. What is the distance from the center to point T if T lies on the circumference?",
+    "option_a": "6",
+    "option_b": "7",
+    "option_c": "8",
+    "option_d": "9",
+    "answer": "7",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "The distance from the center of a circle to any point on its circumference is always equal to the radius, which is 7 in this case. Other options reflect common misconceptions.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          1,
+          2
+        ],
+        "radius": 7
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -8,
+        10
+      ],
+      "y_range": [
+        -8,
+        11
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In circle with center U and a radius of 4, what is the length of a chord with a central angle of 60°?",
+    "option_a": "4",
+    "option_b": "4√3",
+    "option_c": "2√3",
+    "option_d": "2",
+    "answer": "4",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The chord length can be found using the formula 2r*sin(θ/2). With θ = 60°, the chord length is 2*4*sin(30°) = 4. Other options are incorrect due to errors in applying the formula.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 4,
+        "angle_measures": [
+          60
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -5,
+        5
+      ],
+      "y_range": [
+        -5,
+        5
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "Circle V is tangent to the y-axis at (0,3) and has a radius of 3. What is its center?",
+    "option_a": "(3, 3)",
+    "option_b": "(-3, 3)",
+    "option_c": "(0, 3)",
+    "option_d": "(3, 0)",
+    "answer": "(3, 3)",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The center of a circle tangent to the y-axis and with a radius touching the y-axis at (0,3) must be (3,3). Other points either don't lie on the circle or aren't at the correct distance from the y-axis.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          3,
+          3
+        ],
+        "radius": 3
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -5,
+        7
+      ],
+      "y_range": [
+        0,
+        6
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "The circle with center (2,2) is divided into three equal arcs. What is the measure of each arc?",
+    "option_a": "60°",
+    "option_b": "90°",
+    "option_c": "120°",
+    "option_d": "180°",
+    "answer": "120°",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Dividing 360° by 3 gives the measure of each arc as 120°. Other options reflect misunderstandings in division of the circle's total degrees.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          2,
+          2
+        ],
+        "radius": 5
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -3,
+        7
+      ],
+      "y_range": [
+        -3,
+        7
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "In circle W, the radius is 10 and the central angle XWY is 45°. What is the area of the corresponding sector?",
+    "option_a": "25π",
+    "option_b": "12.5π",
+    "option_c": "50π",
+    "option_d": "75π",
+    "answer": "25π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The area of a sector is (θ/360) * πr². With θ = 45° and radius 10, the area is (45/360) * π * 10² = 25π. Other values result from incorrect calculations.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          0,
+          0
+        ],
+        "radius": 10,
+        "angle_measures": [
+          45
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -11,
+        11
+      ],
+      "y_range": [
+        -11,
+        11
+      ]
+    }
+  },
+  {
+    "content_name": "Problem Solving and Data Analysis",
+    "question_type": "Graph",
+    "question_choice": "The circle with center (4, -2) has a radius of 5. What is the equation of the circle?",
+    "option_a": "(x - 4)² + (y + 2)² = 25",
+    "option_b": "(x + 4)² + (y - 2)² = 25",
+    "option_c": "(x - 4)² + (y - 2)² = 5",
+    "option_d": "(x - 4)² + (y + 2)² = 5",
+    "answer": "(x - 4)² + (y + 2)² = 25",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The general equation for a circle is (x - h)² + (y - k)² = r². Here, h = 4, k = -2, and r = 5, so the equation is (x - 4)² + (y + 2)² = 25. Other options result from errors in using the formula or sign errors.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "center": [
+          4,
+          -2
+        ],
+        "radius": 5
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -2,
+        10
+      ],
+      "y_range": [
+        -8,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,222 @@
+[
+    {
+        "question": "What is the area of triangle ABC in the figure below?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "24",
+            "calculated_answer": "24",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains that with a base of 6 units and height of 8 units, the area is calculated as 1/2 * base * height = 24.",
+        "feedback": "The figure is clear and includes all necessary information, such as lengths of sides, to solve the question. The student can determine the area using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the volume of the cylinder shown in the figure below?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "45π",
+            "calculated_answer": "45π",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains that the volume is calculated using the formula πr²h with r=3 and h=5, resulting in 45π.",
+        "feedback": "The figure is clear and includes all necessary information such as the radius and height, allowing the student to calculate the volume of the cylinder. No answer is directly shown."
+    },
+    {
+        "question": "What is the measure of angle BAC in the triangle below?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "50°",
+            "calculated_answer": "50°",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly uses the Law of Cosines: c^2 = a^2 + b^2 - 2ab*cos(C) to find angle BAC.",
+        "feedback": "The figure is clear and includes all necessary information. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the length of the diagonal of the rectangle shown below?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "25",
+            "calculated_answer": "25",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains that the diagonal is calculated using the Pythagorean theorem with sides 15 and 20.",
+        "feedback": "The figure is clear and includes all necessary information. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the circumference of the circle in the figure?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "20π",
+            "calculated_answer": "20π",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains the use of the circumference formula 2πr with the given radius of 10, leading to a circumference of 20π.",
+        "feedback": "The figure is clear and includes all necessary information. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the volume of the cube shown?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "125",
+            "calculated_answer": "125",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains that the side length of the cube is 5 units, and the volume is calculated as side³ = 5³ = 125.",
+        "feedback": "The figure is clear and includes all necessary information. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the area of the trapezoid in the figure below?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "60",
+            "calculated_answer": "60",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly calculates the area using the formula for a trapezoid's area.",
+        "feedback": "The figure is clear and includes all necessary information: two parallel sides (8 units and 6 units) and the height (6 units). The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "Which segment is the radius of the circle shown?",
+        "is_valid": "false",
+        "answer_verification": {
+            "provided_answer": "AB",
+            "calculated_answer": "AD",
+            "is_correct": "false"
+        },
+        "feedback_check": "Incorrect. The feedback incorrectly identifies segment AB as the radius. Based on the image, the center is at the origin (0,0) and the radius is 5 units vertically to point D (0,5).",
+        "reason": "The feedback and provided answer incorrectly specify AB as the radius. The image clearly shows AD as the radius."
+    },
+    {
+        "question": "What is the measure of angle B in the right triangle shown?",
+        "is_valid": "false",
+        "answer_verification": {
+            "provided_answer": "45°",
+            "calculated_answer": "60°",
+            "is_correct": "false"
+        },
+        "feedback_check": "Incorrect. The feedback claims it is a right isosceles triangle with angles 45°, 45°, 90°, but based on the side lengths given, it's not. The side lengths suggest a 30°-60°-90° triangle.",
+        "reason": "The triangle side lengths show a 30°-60°-90° triangle, not an isosceles right triangle. The side lengths of 5, 5, and approximately 7.07 (√50) do not form an isosceles right triangle."
+    },
+    {
+        "question": "What is the length of the arc AB of the circle in the figure, if the central angle AOB is 60°?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "π",
+            "calculated_answer": "π",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains the calculation of the arc length using the formula (θ/360) × 2πr with a radius of 6.",
+        "feedback": "The figure is clear and includes all necessary information. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the height of the pyramid shown, given the base is a square with side 6 and slant height 5?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "4",
+            "calculated_answer": "4",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains using the Pythagorean theorem with half the diagonal base, 3√2 ≈ 4.24, to find the height.",
+        "feedback": "The figure is clear and includes all necessary information such as dimensions and labels. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the area of sector AOB in the circle shown, if the radius is 8 and the central angle is 45°?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "8π/3",
+            "calculated_answer": "8π/3",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains the area calculation using the formula for the area of a sector.",
+        "feedback": "The figure is clear, showing the radius as 8 and the angle as 45°. All necessary information is provided to solve the question without directly showing the answer."
+    },
+    {
+        "question": "What is the length of the hypotenuse AC of the right triangle in the figure?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "13",
+            "calculated_answer": "13",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly describes the use of the Pythagorean Theorem on a right triangle with legs 5 and 12, giving a hypotenuse of 13.",
+        "feedback": "The figure is clear and includes all necessary information such as labeled lengths of the legs and right-angle mark. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the area of the semicircle shown?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "18π",
+            "calculated_answer": "18π",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly calculates the area of the semicircle using the formula 1/2 πr² with r = 6, resulting in the area being 18π.",
+        "feedback": "The figure is clear and includes all necessary information such as the radius and labels. It does not show the answer directly, allowing the student to solve the question using the provided information in the diagram."
+    },
+    {
+        "question": "What is the area of the shaded region between two concentric circles with radii 8 and 5?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "39π",
+            "calculated_answer": "39π",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly calculates the area of the shaded region by subtracting the area of the smaller circle from the larger circle: π(8² - 5²) = 39π.",
+        "feedback": "The figure is clear and includes necessary information showing two concentric circles with radii labeled correctly. It does not directly reveal the answer."
+    },
+    {
+        "question": "What is the base length of the isosceles triangle with vertex angle 40° and equal sides of length 7?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "6",
+            "calculated_answer": "6",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly uses the formula for the base of an isosceles triangle given the vertex angle and equal side lengths: base = 2 * 7 * sin(20°).",
+        "feedback": "The figure is clear and includes all necessary information. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the total surface area of the rectangular prism shown?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "94",
+            "calculated_answer": "94",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly applies the formula for the surface area of a rectangular prism using the given dimensions: length = 4, width = 3, height = 5.",
+        "feedback": "The figure is clear, shows all necessary dimensions, and allows the student to solve the question accurately without directly providing the answer."
+    },
+    {
+        "question": "In triangle ABC, if AB = 9, BC = 12, and angle B is 90°, what is the length of AC?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "15",
+            "calculated_answer": "15",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains that the Pythagorean theorem is used to find the length of AC: AC = √(AB² + BC²) = √(81 + 144) = 15.",
+        "feedback": "The figure is clear and includes all necessary information, including side lengths and a right-angle mark. The student can solve the question using the diagram, and no answer is directly shown."
+    },
+    {
+        "question": "What is the length of side BC in triangle ABC given AC = 10, AB = 8, and angle B = 60°?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "7",
+            "calculated_answer": "7",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly applies the Law of Cosines to find BC = 7.",
+        "feedback": "The figure is clear and includes all necessary information with side lengths and angle labels. The student can solve the question using the Law of Cosines."
+    },
+    {
+        "question": "What is the volume of the cone with radius 4 and height 9?",
+        "is_valid": "true",
+        "answer_verification": {
+            "provided_answer": "48π",
+            "calculated_answer": "48π",
+            "is_correct": "true"
+        },
+        "feedback_check": "Accurate. The feedback correctly explains the volume calculation for the cone using the formula (1/3)πr²h.",
+        "feedback": "The figure is clear, showing the radius and height. The student can solve the question using the diagram, and no answer is directly shown."
+    }
+]

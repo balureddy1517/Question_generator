@@ -1,0 +1,1053 @@
+[
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the area of triangle ABC in the figure below?",
+    "option_a": "12",
+    "option_b": "18",
+    "option_c": "24",
+    "option_d": "30",
+    "answer": "24",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "The triangle has base 6 units and height 8 units. Area = 1/2 * base * height = 24.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          6,
+          10,
+          8
+        ],
+        "angle_measures": [],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            0,
+            8
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        10
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    },
+    "image_number": "0.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the volume of the cylinder shown in the figure below?",
+    "option_a": "50π",
+    "option_b": "75π",
+    "option_c": "100π",
+    "option_d": "125π",
+    "answer": "75π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Volume of cylinder is πr²h. Here, r=3 and h=5, so volume is π×3²×5=45π.",
+    "graph_data": {
+      "type": "cylinder",
+      "parameters": {
+        "radius": 3,
+        "height": 5,
+        "center_coordinates": [
+          0,
+          0
+        ],
+        "orientation": "vertical"
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -5,
+        5
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    },
+    "image_number": "1.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the measure of angle BAC in the triangle below?",
+    "option_a": "35°",
+    "option_b": "40°",
+    "option_c": "50°",
+    "option_d": "60°",
+    "answer": "50°",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "Using the given side lengths and the Law of Cosines, angle BAC measures 50°.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          7,
+          9,
+          10
+        ],
+        "angle_measures": [],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        12
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    },
+    "image_number": "2.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the length of the diagonal of the rectangle shown below?",
+    "option_a": "15",
+    "option_b": "17",
+    "option_c": "20",
+    "option_d": "25",
+    "answer": "25",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "Diagonal length is √(15² + 20²) = √(225 + 400) = √625 = 25.",
+    "graph_data": {
+      "type": "quadrilateral",
+      "parameters": {
+        "quadrilateral_type": "rectangle",
+        "side_lengths": [
+          15,
+          20
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            15,
+            20
+          ],
+          [
+            0,
+            20
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        20
+      ],
+      "y_range": [
+        0,
+        25
+      ]
+    },
+    "image_number": "3.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the circumference of the circle in the figure?",
+    "option_a": "10π",
+    "option_b": "15π",
+    "option_c": "20π",
+    "option_d": "25π",
+    "answer": "20π",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "Circumference formula is 2πr; given radius 10, so circumference is 20π.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "radius": 10,
+        "center_coordinates": [
+          0,
+          0
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -15,
+        15
+      ],
+      "y_range": [
+        -15,
+        15
+      ]
+    },
+    "image_number": "4.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the volume of the cube shown?",
+    "option_a": "64",
+    "option_b": "125",
+    "option_c": "216",
+    "option_d": "343",
+    "answer": "125",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Volume of a cube is side³; side length 5, so volume is 125.",
+    "graph_data": {
+      "type": "cube",
+      "parameters": {
+        "side_length": 5,
+        "vertices": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            5,
+            5,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            5,
+            0,
+            5
+          ],
+          [
+            5,
+            5,
+            5
+          ],
+          [
+            0,
+            5,
+            5
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units",
+        "z": "Units"
+      },
+      "x_range": [
+        0,
+        6
+      ],
+      "y_range": [
+        0,
+        6
+      ],
+      "z_range": [
+        0,
+        6
+      ]
+    },
+    "image_number": "5.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the area of the trapezoid in the figure below?",
+    "option_a": "48",
+    "option_b": "60",
+    "option_c": "72",
+    "option_d": "84",
+    "answer": "60",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Area = 1/2 * height * (sum of parallel sides) = 1/2 * 6 * (8 + 12) = 60.",
+    "graph_data": {
+      "type": "quadrilateral",
+      "parameters": {
+        "quadrilateral_type": "trapezoid",
+        "bases": [
+          8,
+          12
+        ],
+        "height": 6,
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        15
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    },
+    "image_number": "6.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "Which segment is the radius of the circle shown?",
+    "option_a": "Segment AB connecting (0,0) to (5,0)",
+    "option_b": "Segment BC connecting (5,0) to (5,5)",
+    "option_c": "Segment AC connecting (0,0) to (5,5)",
+    "option_d": "Segment AD connecting (0,0) to (0,5)",
+    "answer": "Segment AB connecting (0,0) to (5,0)",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "Radius is the segment from center to any point on the circle. AB lies along radius length 5.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "radius": 5,
+        "center_coordinates": [
+          0,
+          0
+        ],
+        "points_on_circumference": [
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -6,
+        6
+      ],
+      "y_range": [
+        -6,
+        6
+      ]
+    },
+    "image_number": "7.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the measure of angle B in the right triangle shown?",
+    "option_a": "30°",
+    "option_b": "45°",
+    "option_c": "60°",
+    "option_d": "90°",
+    "answer": "45°",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "This is a right isosceles triangle, so angles are 45°, 45°, 90°. Angle B is 45°.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          5,
+          5,
+          7.07
+        ],
+        "angle_measures": [
+          90,
+          45,
+          45
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        7
+      ],
+      "y_range": [
+        0,
+        7
+      ]
+    },
+    "image_number": "8.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the length of the arc AB of the circle in the figure, if the central angle AOB is 60°?",
+    "option_a": "π",
+    "option_b": "2π",
+    "option_c": "3π",
+    "option_d": "4π",
+    "answer": "π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Arc length = (θ/360) × 2πr = (60/360) × 2π × 6 = π.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "radius": 6,
+        "center_coordinates": [
+          0,
+          0
+        ],
+        "central_angle_degrees": 60,
+        "points": {
+          "O": [
+            0,
+            0
+          ],
+          "A": [
+            6,
+            0
+          ],
+          "B": [
+            3,
+            5.2
+          ]
+        }
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -7,
+        7
+      ],
+      "y_range": [
+        -7,
+        7
+      ]
+    },
+    "image_number": "9.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the height of the pyramid shown, given the base is a square with side 6 and slant height 5?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "answer": "4",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "Use Pythagorean theorem on right triangle with slant height 5 and half diagonal base 3√2 ≈ 4.24 to find height.",
+    "graph_data": {
+      "type": "pyramid",
+      "parameters": {
+        "base_type": "square",
+        "base_side": 6,
+        "slant_height": 5,
+        "vertices_base": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            6,
+            6,
+            0
+          ],
+          [
+            0,
+            6,
+            0
+          ]
+        ],
+        "apex": [
+          3,
+          3,
+          "h"
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units",
+        "z": "Units"
+      },
+      "x_range": [
+        0,
+        7
+      ],
+      "y_range": [
+        0,
+        7
+      ],
+      "z_range": [
+        0,
+        7
+      ]
+    },
+    "image_number": "10.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the area of sector AOB in the circle shown, if the radius is 8 and the central angle is 45°?",
+    "option_a": "16π/3",
+    "option_b": "8π/3",
+    "option_c": "12π/3",
+    "option_d": "24π/3",
+    "answer": "8π/3",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Area of sector = (θ/360) × πr² = (45/360) × π × 8² = 8π/3.",
+    "graph_data": {
+      "type": "circle",
+      "parameters": {
+        "radius": 8,
+        "center_coordinates": [
+          0,
+          0
+        ],
+        "central_angle_degrees": 45,
+        "points": {
+          "O": [
+            0,
+            0
+          ],
+          "A": [
+            8,
+            0
+          ],
+          "B": [
+            5.66,
+            5.66
+          ]
+        }
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    },
+    "image_number": "11.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the length of the hypotenuse AC of the right triangle in the figure?",
+    "option_a": "10",
+    "option_b": "13",
+    "option_c": "15",
+    "option_d": "17",
+    "answer": "13",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "This is a right triangle with legs 5 and 12; by Pythagoras, hypotenuse = 13.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          5,
+          12,
+          13
+        ],
+        "angle_measures": [
+          90,
+          22,
+          68
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            12
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        15
+      ],
+      "y_range": [
+        0,
+        15
+      ]
+    },
+    "image_number": "12.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the area of the semicircle shown?",
+    "option_a": "9π",
+    "option_b": "18π",
+    "option_c": "36π",
+    "option_d": "72π",
+    "answer": "18π",
+    "difficulty_level": "Easy",
+    "category_type": "Maths",
+    "feedback": "Area of semicircle = 1/2 πr² = 1/2 × π × 6² = 18π.",
+    "graph_data": {
+      "type": "semicircle",
+      "parameters": {
+        "radius": 6,
+        "center_coordinates": [
+          0,
+          0
+        ],
+        "diameter_endpoints": [
+          [
+            -6,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -7,
+        7
+      ],
+      "y_range": [
+        0,
+        7
+      ]
+    },
+    "image_number": "13.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the area of the shaded region between two concentric circles with radii 8 and 5?",
+    "option_a": "39π",
+    "option_b": "40π",
+    "option_c": "49π",
+    "option_d": "64π",
+    "answer": "39π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Area difference = π(8² - 5²) = π(64 - 25) = 39π.",
+    "graph_data": {
+      "type": "concentric_circles",
+      "parameters": {
+        "outer_radius": 8,
+        "inner_radius": 5,
+        "center_coordinates": [
+          0,
+          0
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -10,
+        10
+      ],
+      "y_range": [
+        -10,
+        10
+      ]
+    },
+    "image_number": "14.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the base length of the isosceles triangle with vertex angle 40° and equal sides of length 7?",
+    "option_a": "6",
+    "option_b": "7",
+    "option_c": "8",
+    "option_d": "9",
+    "answer": "6",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "Base length = 2 * 7 * sin(20°) ≈ 6.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          7,
+          7,
+          "base"
+        ],
+        "vertex_angle_degrees": 40,
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            6.7
+          ],
+          [
+            6,
+            0
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        8
+      ],
+      "y_range": [
+        0,
+        8
+      ]
+    },
+    "image_number": "15.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the total surface area of the rectangular prism shown?",
+    "option_a": "94",
+    "option_b": "98",
+    "option_c": "102",
+    "option_d": "110",
+    "answer": "94",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Surface area = 2(lw + lh + wh) = 2(4×3 + 4×5 + 3×5) = 94.",
+    "graph_data": {
+      "type": "rectangular_prism",
+      "parameters": {
+        "length": 4,
+        "width": 3,
+        "height": 5,
+        "vertices": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            4,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            4,
+            0,
+            5
+          ],
+          [
+            4,
+            3,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units",
+        "z": "Units"
+      },
+      "x_range": [
+        0,
+        5
+      ],
+      "y_range": [
+        0,
+        5
+      ],
+      "z_range": [
+        0,
+        6
+      ]
+    },
+    "image_number": "16.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "In triangle ABC, if AB = 9, BC = 12, and angle B is 90°, what is the length of AC?",
+    "option_a": "10",
+    "option_b": "13.5",
+    "option_c": "15",
+    "option_d": "18",
+    "answer": "15",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "By Pythagorean theorem: AC = √(AB² + BC²) = √(81 + 144) = 15.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          9,
+          12,
+          "AC"
+        ],
+        "angle_measures": [
+          90,
+          null,
+          null
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            12
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        15
+      ],
+      "y_range": [
+        0,
+        15
+      ]
+    },
+    "image_number": "17.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the length of side BC in triangle ABC given AC = 10, AB = 8, and angle B = 60°?",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "8",
+    "answer": "7",
+    "difficulty_level": "Hard",
+    "category_type": "Maths",
+    "feedback": "Using Law of Cosines: BC² = AB² + AC² - 2(AB)(AC)cos 60° = 49; BC = 7.",
+    "graph_data": {
+      "type": "triangle",
+      "parameters": {
+        "side_lengths": [
+          8,
+          10,
+          "BC"
+        ],
+        "angle_measures": [
+          null,
+          60,
+          null
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            3,
+            8.66
+          ]
+        ]
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        0,
+        12
+      ],
+      "y_range": [
+        0,
+        12
+      ]
+    },
+    "image_number": "18.png"
+  },
+  {
+    "content_name": "Geometry and Trigonometry",
+    "question_type": "Graph",
+    "question_choice": "What is the volume of the cone with radius 4 and height 9?",
+    "option_a": "48π",
+    "option_b": "72π",
+    "option_c": "96π",
+    "option_d": "108π",
+    "answer": "48π",
+    "difficulty_level": "Medium",
+    "category_type": "Maths",
+    "feedback": "Volume of cone = (1/3)πr²h = (1/3)π4²×9 = 48π.",
+    "graph_data": {
+      "type": "cone",
+      "parameters": {
+        "radius": 4,
+        "height": 9,
+        "center_coordinates": [
+          0,
+          0
+        ],
+        "orientation": "vertical"
+      },
+      "axis_labels": {
+        "x": "Units",
+        "y": "Units"
+      },
+      "x_range": [
+        -5,
+        5
+      ],
+      "y_range": [
+        0,
+        10
+      ]
+    },
+    "image_number": "19.png"
+  }
+]

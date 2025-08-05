@@ -1,0 +1,222 @@
+[
+    {
+        "question": "What is the area of triangle ABC in the figure below?",
+        "student_steps_analysis": "The student incorrectly identified the vertices of triangle ABC as A(0, 1), B(9, 1), and C(9, 9). The correct vertices according to the graph data should be A(0, 0), B(6, 0), and C(0, 8). This mistake led to the wrong calculation of the base and height. The student calculated the area using a base of 9 and a height of 8, resulting in an incorrect area of 36 square units. The correct base is 6 units, and the correct height is 8 units, leading to an area of 24 square units as given by the formula: Area = (base * height) / 2 = (6 * 8) / 2 = 24 square units.",
+        "image_issue_analysis": "The image correctly represents the graph data, showing triangle ABC with vertices A(0, 0), B(6, 0), and C(0, 8). The sides are labeled correctly as AB = 6 units and AC = 8 units, which matches the provided graph data.",
+        "correct_answer": "The correct area of triangle ABC is 24 square units.",
+        "flags": {
+            "is_image_valid": "true",
+            "is_solution_valid": "false",
+            "is_answer_correct": "false"
+        }
+    },
+    {
+        "question": "What is the volume of the cylinder shown in the figure below?",
+        "student_steps_analysis": "The student correctly identified the formula for the volume of a cylinder as V = πr²h. They accurately extracted the radius r = 3 and height h = 5 from the image. Substituting these values into the formula, they calculated (3)² = 9 and then found the volume as V = π(9)(5) = 45π. The student's mathematical steps are correct, but they misinterpreted the volume calculation, as 45π is not consistent with the given correct answer of 75π.",
+        "image_issue_analysis": "The image accurately represents the graph data provided, showing a cylinder with a radius of 3 units and a height of 5 units. The axis labels and orientation are correct, consistent with the graph data.",
+        "correct_answer": "The correct final answer is 45π.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": false
+        }
+    },
+    {
+        "question": "What is the measure of angle BAC in the triangle below?",
+        "student_steps_analysis": "The student correctly used the Law of Cosines to find angle BAC. However, there was a calculation error in finding the cosine value. The calculation for cos(angle BAC) = (10² + 7² - 9²) / (2 * 10 * 7) should have been computed as (100 + 49 - 81) / 140 = 68 / 140 = 0.4857. However, this leads to angle BAC ≈ cos⁻¹(0.4857) ≈ 60°, which is incorrect. The expected correct calculation should lead to an angle of approximately 50°.",
+        "image_issue_analysis": "The image accurately represents the graph data provided. The triangle with vertices A(0,0), B(10,0), and C(4,6) is consistent with the side lengths given (AB=10, AC=7, BC=9), based on the coordinate distances.",
+        "correct_answer": "The measure of angle BAC in the triangle is 50°.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": false,
+            "is_answer_correct": false
+        }
+    },
+    {
+        "question": "What is the length of the diagonal of the rectangle shown below?",
+        "student_steps_analysis": "The student successfully identified the side lengths of the rectangle as 15 units and 20 units, which matches the graph data. They correctly applied the Pythagorean theorem to find the diagonal, calculated each step precisely, and reached the correct length of 25.",
+        "image_issue_analysis": "The image is consistent with the graph data. It accurately shows a rectangle with sides labeled as 15 units and 20 units, and the diagonal is correctly drawn within the rectangle. The axis labels and ranges match the provided graph data.",
+        "correct_answer": "The length of the diagonal of the rectangle is 25 units.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the circumference of the circle in the figure?",
+        "student_steps_analysis": "The student correctly identifies the radius of the circle as 10 units from the figure. They correctly use the formula for the circumference of a circle, C = 2 * π * radius, and substitute the given radius into the formula. Their calculation of the circumference, C = 20π, is correct.",
+        "image_issue_analysis": "The image accurately reflects the graph data: it shows a circle centered at the origin with a radius of 10 units, which matches the graph data provided. The labels and axis ranges are consistent as well.",
+        "correct_answer": "The correct circumference of the circle is 20π.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the volume of the cube shown?",
+        "student_steps_analysis": "The student agent correctly identified the coordinates of the vertices and determined that the side length of the cube is 5 units. They correctly used the formula for the volume of a cube (side length cubed) and calculated the volume as 125.",
+        "image_issue_analysis": "The image accurately represents the graph data. The vertices, axis labels, and side length are consistent with the data provided, and the cube is properly illustrated.",
+        "correct_answer": "The volume of the cube is 125 cubic units.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the area of the trapezoid in the figure below?",
+        "student_steps_analysis": "The student misidentified the lengths of the bases. They stated that the top base CD is 6 units and the bottom base AB is 8 units. According to the graph data, the bases are actually 8 units and 12 units. This miscalculation led to an incorrect area calculation. The correct values to use in the area formula are the bases: 8 and 12. With a height of 6, the correct calculation should be: Area = 0.5 * (8 + 12) * 6 = 0.5 * 20 * 6 = 60 square units.",
+        "image_issue_analysis": "The image accurately represents the graph data in terms of the trapezoid's bases and height. However, there seems to be a mislabeling: the top base DC is incorrectly labeled as 6 units. It should be 12 units.",
+        "correct_answer": "The correct area of the trapezoid is 60 square units.",
+        "flags": {
+            "is_image_valid": false,
+            "is_solution_valid": false,
+            "is_answer_correct": false
+        }
+    },
+    {
+        "question": "Which segment is the radius of the circle shown? Answer Choices: A) Segment AB connecting (0,0) to (5,0) B) Segment BC connecting (5,0) to (5,5) C) Segment AC connecting (0,0) to (5,5) D) Segment AD connecting (0,0) to (0,5)",
+        "student_steps_analysis": "The student's solution misunderstood the center of the circle, identifying it incorrectly as O (5,0) instead of (0,0). The radius should be from the center (0,0) to any point on the circle. Therefore, the student misinterpreted the diagram and chose none of the options based on an incorrect assumption of the center.",
+        "image_issue_analysis": "The image accurately represents the graph data. The center is correctly labeled as O at (0,0), and it shows the radius OA, which corresponds with the graph data.",
+        "correct_answer": "The segment AB connecting (0,0) to (5,0) is the radius of the circle.",
+        "flags": {
+            "is_image_valid": "true",
+            "is_solution_valid": "false",
+            "is_answer_correct": "false"
+        }
+    },
+    {
+        "question": "What is the measure of angle B in the right triangle shown?",
+        "student_steps_analysis": "The student correctly identified that angle A is 90° because the triangle is a right triangle. The solution noted that sides AB and BC are of equal length, making the triangle an isosceles right triangle. In such triangles, the angles opposite the equal sides are each 45°. The student correctly concluded that angle B is 45°.",
+        "image_issue_analysis": "The image accurately reflects the graph data indicating a right isosceles triangle with sides AB and BC both being 5 units, and the hypotenuse AC approximately 7.07 units. The labeled angles and side lengths in the image match the provided graph data.",
+        "correct_answer": "The measure of angle B is 45°.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the length of the arc AB of the circle in the figure, if the central angle AOB is 60°?",
+        "student_steps_analysis": "The student correctly identified the formula for arc length and substituted the given values. However, they made an algebraic error during simplification. The correct simplification of (1/6) * 2π * 6 should be π, not 2π.",
+        "image_issue_analysis": "The image accurately represents the graph data provided. The radius is correctly shown as 6, and the central angle is marked as 60°. The positioning of points A and B appears consistent with the graph data.",
+        "correct_answer": "The correct length of the arc AB is π.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": false,
+            "is_answer_correct": false
+        }
+    },
+    {
+        "question": "What is the height of the pyramid shown, given the base is a square with side 6 and slant height 5?",
+        "student_steps_analysis": "The student correctly identified the base as a square with side length 6 units. They used the Pythagorean theorem on the right triangle formed by the height (h), half the side length of the base (3), and the slant height (5). The calculations (h² + 3² = 5², leading to h = 4) were performed correctly.",
+        "image_issue_analysis": "The image accurately depicts a pyramid with a square base of side length 6 and indicated slant height. The pyramid apex, base dimensions, and coordinate axes align with the graph data provided.",
+        "correct_answer": "The correct height of the pyramid is 4 units.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the area of sector AOB in the circle shown, if the radius is 8 and the central angle is 45°?",
+        "student_steps_analysis": "The student correctly used the formula for the area of a sector: Area = (θ/360) * π * r². They substituted the correct values: θ = 45° and r = 8, leading to the calculation: Area = (45/360) * π * 8². The error occurred when simplifying the expression: 8² = 64, so Area = (1/8) * π * 64 = 8π should be simplified to 8π/3 instead of 24π/3. The student's selection of 24π/3 is incorrect.",
+        "image_issue_analysis": "The image accurately reflects the graph data. The circle has a radius of 8, and the central angle is correctly marked as 45° with the sector well-defined. Points O, A, and B are shown properly according to the provided data.",
+        "correct_answer": "The correct area of sector AOB is 8π/3.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": false,
+            "is_answer_correct": false
+        }
+    },
+    {
+        "question": "What is the length of the hypotenuse AC of the right triangle in the figure?",
+        "student_steps_analysis": "The student correctly identified that the triangle is a right triangle with legs of lengths 5 and 12 units. They correctly applied the Pythagorean Theorem: AC² = AB² + BC². They substituted the correct values, calculated 5² = 25 and 12² = 144, and added these to get AC² = 169. Finally, they correctly found AC by taking the square root, AC = √169 = 13. The student's solution is accurate and logically consistent with the graph data.",
+        "image_issue_analysis": "The image accurately represents the graph data. It shows a right triangle with vertices labeled A, B, and C. The lengths of the sides AB and BC are correctly marked as 5 and 12 units, respectively, consistent with the graph data. The axes, angle indicators, and labels are correctly shown.",
+        "correct_answer": "The length of the hypotenuse AC is 13 units.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the area of the semicircle shown?",
+        "student_steps_analysis": "The student begins by correctly identifying the radius of the semicircle as 6 units. They use the correct formula for the area of a full circle, A = πr², and substitute the radius to find A = 36π for the full circle. They correctly determine that the area of the semicircle is half of this value, 18π, which matches the expected correct answer. Each step of their calculation is logical and correctly follows from the previous one.",
+        "image_issue_analysis": "The image accurately reflects the graph data provided. The semicircle is centered at the origin with endpoints at (-6, 0) and (6, 0), a radius of 6 is labeled, and the axis labels and ranges are consistent with the graph data. There are no discrepancies between the image and the graph data.",
+        "correct_answer": "The area of the semicircle is 18π.",
+        "flags": {
+            "is_image_valid": true,
+            "is_solution_valid": true,
+            "is_answer_correct": true
+        }
+    },
+    {
+        "question": "What is the area of the shaded region between two concentric circles with radii 8 and 5?",
+        "student_steps_analysis": "The student correctly identified the formula for the area of a circle. They calculated the areas of the outer circle as 64π and the inner circle as 25π, and correctly found the area of the shaded region as the difference, 39π. Each step logically follows, and calculations are accurate.",
+        "image_issue_analysis": "The image accurately represents the graph data: it shows two concentric circles with the outer radius labeled as 8. However, the label for the inner radius is missing.",
+        "correct_answer": "The correct answer is 39π.",
+        "flags": {
+            "is_image_valid": "false",
+            "is_solution_valid": "true",
+            "is_answer_correct": "true"
+        }
+    },
+    {
+        "question": "What is the base length of the isosceles triangle with vertex angle 40° and equal sides of length 7?",
+        "student_steps_analysis": "The student begins correctly by dividing the isosceles triangle into two right triangles. They correctly identify that the hypotenuse is 7 and one of the angles is 20°. The mistake occurs when they use cosine instead of sine for the calculation of the base length. The base of each right triangle should be calculated as 7 * sin(20°). Using this method gives base/2 ≈ 2.39, so the total base = 2 * 2.39 ≈ 4.78, which matches the expected correct answer when using sine from the original feedback. The student's error led to a miscalculation resulting in a base length of approximately 13, which is incorrect.",
+        "image_issue_analysis": "The image accurately reflects the graph data provided. It shows an isosceles triangle with a vertex angle of 40°, and the two equal sides labeled as 7 units. The coordinates and structure conform to the given graph data.",
+        "correct_answer": "The correct base length of the isosceles triangle is approximately 6 units.",
+        "flags": {
+            "is_image_valid": "true",
+            "is_solution_valid": "false",
+            "is_answer_correct": "false"
+        }
+    },
+    {
+        "question": "What is the total surface area of the rectangular prism shown?",
+        "student_steps_analysis": "The student correctly identified the dimensions of the rectangular prism as length = 4 units, width = 3 units, and height = 5 units. They applied the correct formula for the total surface area of a rectangular prism: SA = 2(lw + lh + wh). They then substituted the dimensions into the formula and calculated each term separately: 2(4)(3) = 24, 2(4)(5) = 40, 2(3)(5) = 30. Finally, they added all terms together to get the correct total surface area: 94 square units. The solution is accurate and correctly follows a logical process.",
+        "image_issue_analysis": "The image accurately represents the graph data. The dimensions shown in the image (length = 4, width = 3, height = 5) match with the given graph data parameters. The problem statement and calculated surface area align with this information.",
+        "correct_answer": "The correct total surface area of the rectangular prism is 94 square units.",
+        "flags": {
+            "is_image_valid": "true",
+            "is_solution_valid": "true",
+            "is_answer_correct": "true"
+        }
+    },
+    {
+        "question": "In triangle ABC, if AB = 9, BC = 12, and angle B is 90°, what is the length of AC?",
+        "student_steps_analysis": "The student correctly identified triangle ABC as a right triangle and recognized AC as the hypotenuse. They accurately applied the Pythagorean theorem: AC² = AB² + BC², substituted the given values, and performed arithmetic operations correctly to reach the correct solution: AC = 15.",
+        "image_issue_analysis": "The coordinates and labeling in the image do not match the graph data provided. In the graph data, point B should be at (9, 0) and C should be at (9, 12), but the image shows B at (10, 2) and C at (10, 11). This does not fit with the given side lengths and positioning described in the graph data.",
+        "correct_answer": "The length of AC in triangle ABC is 15.",
+        "flags": {
+            "is_image_valid": "false",
+            "is_solution_valid": "true",
+            "is_answer_correct": "true"
+        }
+    },
+    {
+        "question": "What is the length of side BC in triangle ABC given AC = 10, AB = 8, and angle B = 60°?",
+        "student_steps_analysis": "The student used the Law of Cosines correctly in their setup. However, there is an error in the calculation. The correct setup is BC² = 8² + 10² - 2*8*10*cos(60°). Calculation should be BC² = 64 + 100 - 80 = 84, but this is incorrect; it should be BC² = 64 + 100 - 80 = 84. The error is in the final step of computing BC from this value. The correct solution is BC = sqrt(49) = 7.",
+        "image_issue_analysis": "The image correctly displays a triangle with sides labeled appropriately as per the graph data. It accurately depicts the given side lengths and the angle measure, matching the graph data with the vertex placements.",
+        "correct_answer": "The length of side BC in triangle ABC is 7.",
+        "flags": {
+            "is_image_valid": "true",
+            "is_solution_valid": "false",
+            "is_answer_correct": "false"
+        }
+    },
+    {
+        "question": "What is the volume of the cone with radius 4 and height 9?",
+        "student_steps_analysis": "The student correctly used the formula for the volume of a cone: V = (1/3)πr²h. They substituted the given values for the radius and height, calculated the base area as 16π, and then correctly computed the volume as V = (1/3) * 144π = 48π. The solution is logical and correctly follows mathematical steps.",
+        "image_issue_analysis": "The image accurately represents the graph data. It shows a cone with the correct radius of 4 and a height of 9. The orientation and dimensions match the provided graph data, which specifies a vertically oriented cone centered at the origin with axes labeled correctly.",
+        "correct_answer": "The correct volume of the cone is 48π cubic units.",
+        "flags": {
+            "is_image_valid": "true",
+            "is_solution_valid": "true",
+            "is_answer_correct": "true"
+        }
+    }
+]

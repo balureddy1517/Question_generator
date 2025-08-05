@@ -1,0 +1,270 @@
+[
+    {
+        "question": "What is the area of triangle ABC in the figure below?",
+        "valid": "true",
+        "steps": [
+            "We identify the vertices of triangle ABC: A(0, 1), B(9, 1), C(9, 9).",
+            "AB is parallel to the x-axis, and BC is parallel to the y-axis.",
+            "The length of AB is 9 units (horizontal distance from A to B).",
+            "The height from A to BC is the vertical distance from line AB to point C, which is 8 units (difference in y-coordinates between C and A/B).",
+            "Area of triangle = (base * height) / 2 = (9 * 8) / 2",
+            "Area of triangle = 72 / 2 = 36 square units."
+        ],
+        "answer": "36"
+    },
+    {
+        "question": "What is the volume of the cylinder shown in the figure?",
+        "valid": "true",
+        "steps": [
+            "The formula for the volume of a cylinder is V = πr²h.",
+            "From the image, the radius r is 3 units and the height h is 5 units.",
+            "Substitute these values into the formula: V = π(3)²(5).",
+            "Calculate the square of the radius: (3)² = 9.",
+            "Now calculate the volume: V = π(9)(5).",
+            "V = 45π."
+        ],
+        "answer": "45π"
+    },
+    {
+        "question": "What is the measure of angle BAC in the triangle below?",
+        "valid": "true",
+        "steps": [
+            "We have a triangle ABC with AB = 10 units, AC = 7 units, and BC = 9 units.",
+            "To find angle BAC, we will use the Law of Cosines: cos(angle BAC) = (AB² + AC² - BC²) / (2 * AB * AC).",
+            "Substitute the values: cos(angle BAC) = (10² + 7² - 9²) / (2 * 10 * 7)",
+            "Calculate the squared values: 10² = 100, 7² = 49, 9² = 81.",
+            "Substitute back: cos(angle BAC) = (100 + 49 - 81) / (140)",
+            "Calculate the numerator: 100 + 49 - 81 = 68.",
+            "Substitute back: cos(angle BAC) = 68 / 140 ≈ 0.4857.",
+            "Calculate the angle: angle BAC ≈ cos⁻¹(0.4857) ≈ 60°."
+        ],
+        "answer": "60°"
+    },
+    {
+        "question": "What is the length of the diagonal of the rectangle shown below?",
+        "valid": true,
+        "steps": [
+            "The rectangle has sides of 15 units and 20 units.",
+            "To find the diagonal, apply the Pythagorean theorem: diagonal² = length² + width².",
+            "Substitute the values: diagonal² = 15² + 20².",
+            "Calculate: diagonal² = 225 + 400.",
+            "Sum: diagonal² = 625.",
+            "Find the square root: diagonal = √625 = 25."
+        ],
+        "answer": "25"
+    },
+    {
+        "question": "What is the circumference of the circle in the figure?",
+        "valid": "true",
+        "steps": [
+            "The figure shows a circle with a radius of 10 units.",
+            "The formula for the circumference of a circle is C = 2 * π * radius.",
+            "Substitute the given radius into the formula: C = 2 * π * 10.",
+            "Calculate the circumference: C = 20π."
+        ],
+        "answer": "20π"
+    },
+    {
+        "question": "What is the volume of the cube shown?",
+        "valid": true,
+        "steps": [
+            "The coordinates of the vertices indicate the cube extends from (0,0,0) to (5,5,5).",
+            "The side length of the cube is 5 units.",
+            "The formula for the volume of a cube is side length cubed: V = s^3.",
+            "Substitute the side length: V = 5^3 = 125."
+        ],
+        "answer": "125"
+    },
+    {
+        "question": "What is the area of the trapezoid in the figure below?",
+        "valid": "true",
+        "steps": [
+            "In the image, we see a trapezoid ABCD.",
+            "The length of the top base (CD) is 6 units.",
+            "The length of the bottom base (AB) is 8 units.",
+            "The height of the trapezoid (distance between bases) is 6 units.",
+            "The formula for the area of a trapezoid is: Area = 0.5 * (Base1 + Base2) * Height",
+            "Substitute the given values: Area = 0.5 * (6 + 8) * 6",
+            "Calculate inside the parentheses first: 6 + 8 = 14",
+            "Then, 0.5 * 14 * 6 = 42",
+            "So, the area of the trapezoid is 42 square units."
+        ],
+        "answer": "42"
+    },
+    {
+        "question": "Which segment is the radius of the circle shown?",
+        "valid": "true",
+        "steps": [
+            "Identify the center of the circle which is at O (5,0).",
+            "The radius is a line segment from the center of the circle to any point on the circle.",
+            "The figure shows the radius from O (5,0) to a point on the circle labeled A.",
+            "Examining the options given:",
+            "Option A) AB connects (0,0) to (5,0), not from the center.",
+            "Option B) BC connects (5,0) to (5,5), not from the center.",
+            "Option C) AC connects (0,0) to (5,5), not with center.",
+            "Option D) AD connects (0,0) to (0,5), meaning (0,5) would be a point on the circle.",
+            "None of the options specifically match O (5,0) to A."
+        ],
+        "answer": "None of the options correctly describe the segment from the center to the circle point in the figure."
+    },
+    {
+        "question": "What is the measure of angle B in the right triangle shown?",
+        "valid": "true",
+        "steps": [
+            "In the given triangle, angle A is 90° because it is a right triangle and angle B is what we need to find.",
+            "The sides of the triangle are given as AB = 5 units (base between A and B), BC = 5 units (height between A and C), and AC = 7.07 units (hypotenuse).",
+            "In a right triangle with equal lengths of two legs, the triangle is an isosceles right triangle.",
+            "In an isosceles right triangle, angles opposite the equal sides are equal, meaning angle B and angle C are 45° each.",
+            "Thus, the measure of angle B is 45°."
+        ],
+        "answer": "45°"
+    },
+    {
+        "question": "What is the length of the arc AB of the circle in the figure, if the central angle AOB is 60°?",
+        "valid": "true",
+        "steps": [
+            "We are given a circle with a central angle AOB of 60° and the radius OA = OB = 6.",
+            "The formula for the arc length is: Arc length = (Central angle/360°) * 2π * radius.",
+            "Substitute the given values: Arc length = (60°/360°) * 2π * 6.",
+            "Simplify the expression: Arc length = (1/6) * 2π * 6 = (2π/6) * 6 = 2π",
+            "Thus, the length of the arc AB is 2π."
+        ],
+        "answer": "2π"
+    },
+    {
+        "question": "What is the height of the pyramid shown, given the base is a square with side 6 and slant height 5?",
+        "valid": "true",
+        "steps": [
+            "The base of the pyramid is a square with a side length of 6 units.",
+            "The slant height (the distance from the vertex to the midpoint of a side of the base) is given as 5 units.",
+            "The midpoint of one side of the base is at (3, 3, 0) given the alignment with the coordinate system shown.",
+            "By using the Pythagorean theorem in the right triangle formed by the height (h), half the side length of the base (3), and the slant height (5), we have:",
+            "h² + 3² = 5²",
+            "h² + 9 = 25",
+            "h² = 16",
+            "h = √16",
+            "h = 4"
+        ],
+        "answer": "4"
+    },
+    {
+        "question": "What is the area of sector AOB in the circle shown, if the radius is 8 and the central angle is 45°?",
+        "valid": "true",
+        "steps": [
+            "To find the area of sector AOB, use the formula: Area = (θ/360) * π * r², where θ is the central angle in degrees, and r is the radius.",
+            "Substitute the given values: θ = 45° and r = 8.",
+            "Area = (45/360) * π * 8²",
+            "Area = (1/8) * π * 64",
+            "Area = 8π",
+            "This corresponds to 24π/3 from the given options."
+        ],
+        "answer": "24π/3"
+    },
+    {
+        "question": "What is the length of the hypotenuse AC of the right triangle in the figure?",
+        "valid": "true",
+        "steps": [
+            "We are given a right triangle with one side AB = 5 units and another side BC = 12 units.",
+            "We need to find the length of the hypotenuse AC.",
+            "Use the Pythagorean Theorem: AC² = AB² + BC²",
+            "Substitute the values: AC² = 5² + 12²",
+            "Calculate: 5² = 25 and 12² = 144",
+            "AC² = 25 + 144 = 169",
+            "Find AC by taking the square root: AC = √169 = 13"
+        ],
+        "answer": "13"
+    },
+    {
+        "question": "What is the area of the semicircle shown?",
+        "valid": "true",
+        "steps": [
+            "The radius of the semicircle is given as 6 units.",
+            "The area of a full circle is given by the formula A = πr².",
+            "Substitute the radius into the formula for the full circle: A = π(6)² = 36π.",
+            "Since the figure is a semicircle (half of a circle), the area is half of 36π.",
+            "The area of the semicircle is (36π) / 2 = 18π."
+        ],
+        "answer": "18π"
+    },
+    {
+        "question": "What is the area of the shaded region between two concentric circles with radii 8 and 5?",
+        "valid": "true",
+        "steps": [
+            "The area of a circle is given by the formula A = πr², where r is the radius.",
+            "For the larger circle with radius 8: A₁ = π(8)² = 64π.",
+            "For the smaller circle with radius 5: A₂ = π(5)² = 25π.",
+            "The area of the shaded region is the difference between the areas of the two circles: A_shaded = A₁ - A₂ = 64π - 25π = 39π."
+        ],
+        "answer": "39π"
+    },
+    {
+        "question": "What is the base length of the isosceles triangle with vertex angle 40° and equal sides of length 7?",
+        "valid": "true",
+        "steps": [
+            "In an isosceles triangle, the two equal sides are given as 7 units each, and the vertex angle is 40°.",
+            "We can divide this isosceles triangle into two right triangles by drawing an altitude from the vertex angle to the midpoint of the base.",
+            "Each right triangle will have a hypotenuse of 7 (the equal sides), one angle of 20° (half of the vertex angle), and a base which is half of the original base.",
+            "Using the cosine of 20°: cos(20°) = adjacent/hypotenuse = (base/2)/7.",
+            "Rearranging gives: base/2 = 7 * cos(20°).",
+            "Calculating: cos(20°) ≈ 0.9397.",
+            "So base/2 = 7 * 0.9397 ≈ 6.5788.",
+            "Therefore, base ≈ 2 * 6.5788 = 13.1576.",
+            "Rounding it to the nearest whole number, the base length is approximately 13."
+        ],
+        "answer": "13"
+    },
+    {
+        "question": "What is the total surface area of the rectangular prism shown?",
+        "valid": true,
+        "steps": [
+            "Identify the dimensions from the image: length = 4 units, width = 3 units, height = 5 units.",
+            "The formula for the total surface area (SA) of a rectangular prism is: SA = 2lw + 2lh + 2wh.",
+            "Substitute the values into the formula: SA = 2(4)(3) + 2(4)(5) + 2(3)(5).",
+            "Calculate each term separately: 2(4)(3) = 24, 2(4)(5) = 40, 2(3)(5) = 30.",
+            "Add the terms together: 24 + 40 + 30 = 94.",
+            "Therefore, the total surface area of the rectangular prism is 94 square units."
+        ],
+        "answer": "94"
+    },
+    {
+        "question": "In triangle ABC, if AB = 9, BC = 12, and angle B is 90°, what is the length of AC?",
+        "valid": "true",
+        "steps": [
+            "We are given a right triangle ABC with AB = 9, BC = 12, and angle B = 90°.",
+            "AC is the hypotenuse of this right triangle.",
+            "We can use the Pythagorean theorem: AC² = AB² + BC².",
+            "Substitute the given values into the equation: AC² = 9² + 12².",
+            "Calculate the squares: AC² = 81 + 144.",
+            "Add the results: AC² = 225.",
+            "Take the square root of both sides to find AC: AC = √225.",
+            "AC = 15."
+        ],
+        "answer": "15"
+    },
+    {
+        "question": "What is the length of side BC in triangle ABC given AC = 10, AB = 8, and angle B = 60°?",
+        "valid": "true",
+        "steps": [
+            "We are given two sides and the included angle in triangle ABC.",
+            "We can use the Law of Cosines: BC² = AB² + AC² - 2*AB*AC*cos(angle B)",
+            "Substitute the values: BC² = 8² + 10² - 2*8*10*cos(60°)",
+            "cos(60°) = 0.5",
+            "BC² = 64 + 100 - 2*8*10*0.5 = 164 - 80 = 84",
+            "BC = √84 ≈ 9.17"
+        ],
+        "answer": "≈ 9.17"
+    },
+    {
+        "question": "What is the volume of the cone with radius 4 and height 9?",
+        "valid": "true",
+        "steps": [
+            "The formula for the volume of a cone is V = (1/3)πr²h.",
+            "Substitute the given values: r = 4 and h = 9.",
+            "Calculate the base area: πr² = π(4)² = 16π.",
+            "Calculate the volume: V = (1/3) * 16π * 9.",
+            "V = (1/3) * 144π.",
+            "V = 48π."
+        ],
+        "answer": "48π"
+    }
+]
